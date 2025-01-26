@@ -668,8 +668,20 @@ video {
   position: fixed;
 }
 
+.relative {
+  position: relative;
+}
+
 .inset-0 {
   inset: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .right-10 {
@@ -868,6 +880,11 @@ video {
   flex-shrink: 1;
 }
 
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -906,6 +923,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .text-nowrap {
@@ -1318,26 +1339,50 @@ nav {
 /* Testimonial Section */
 
 #testimonial {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   margin-top: 2rem;
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  overflow: clip;
+}
+
+@media (min-width: 640px) {
+  #testimonial {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
 }
 
 #testimonial>article {
   display: flex;
   height: 177px;
-  max-width: 24rem;
+  max-width: 20rem;
   flex-shrink: 0;
   flex-direction: column;
   justify-content: center;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+@media (min-width: 410px) {
+  #testimonial>article {
+    max-width: 24rem;
+  }
+}
+
+@media (min-width: 640px) {
+  #testimonial>article {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+#testimonial>article {
   box-shadow: 0px 12px 20px 0px rgba(27, 42, 52, 0.03);
 }
 
@@ -1357,6 +1402,44 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+#testimonial>article button {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.next,
+.prev {
+  position: absolute;
+  bottom: 3.5rem;
+  height: 2rem;
+  width: 2rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 640px) {
+  .next,
+.prev {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+}
+
+.next img,
+.prev img {
+  margin: auto;
+  width: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .next img,
+.prev img {
+    width: auto;
+  }
 }
 
 /* Reasons Section */
@@ -2221,6 +2304,14 @@ nav {
 }
 
 @media (min-width: 640px) {
+  .sm\:left-10 {
+    left: 2.5rem;
+  }
+
+  .sm\:right-10 {
+    right: 2.5rem;
+  }
+
   .sm\:my-20 {
     margin-top: 5rem;
     margin-bottom: 5rem;

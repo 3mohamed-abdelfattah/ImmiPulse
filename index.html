@@ -109,7 +109,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section>
+    <section class="relative overflow-hidden">
         <div class="flex items-center justify-center gap-7 mt-14">
             <span class="line max-w-[100px]"></span> <!-- Left Line -->
             <p class="text-2xl font-medium text-primaryColor text-nowrap">Trusted by <strong>XXXX Readers...</strong>
@@ -118,9 +118,9 @@
         </div>
 
         <!-- Testimonials -->
-        <div id="testimonial">
+        <div id="testimonial" class="slider">
             <!-- Testimonial 1 -->
-            <article>
+            <article class="slide">
                 <p>Your last issue with the tips to reduce debt was one of the best I have read.
                     Simple but logical. I am on my way to a life without debt. Thanks!</p>
                 <hr>
@@ -131,7 +131,7 @@
             </article>
 
             <!-- Testimonial 2 -->
-            <article>
+            <article class="slide">
                 <p>I enjoy a lot reading ImmiPulse newsletter. It provides very good information
                     and tips to help me manage finances.</p>
                 <hr>
@@ -142,7 +142,7 @@
             </article>
 
             <!-- Testimonial 3 -->
-            <article>
+            <article class="slide">
                 <p>Your tips and analysis are very helpful. I save a lot of time managing my
                     finances.</p>
                 <hr>
@@ -153,7 +153,7 @@
             </article>
 
             <!-- Testimonial 4 -->
-            <article>
+            <article class="slide">
                 <p>Your last issue with the tips to reduce debt was one of the best I have
                     read.
                     Simple but logical. I am on my way to a life without debt. Thanks!</p>
@@ -164,6 +164,12 @@
                 </div>
             </article>
         </div>
+        <button class="prev left-0 sm:left-10">
+            <img src="./assets/icons/forHero/arrow.svg" alt="Left Arrow">
+        </button>
+        <button class="next right-0 sm:right-10">
+            <img src="./assets/icons/forHero/arrow.svg" alt="Left Arrow" class="rotate-180">
+        </button>
     </section>
 
     <!-- Section to display countries information -->
@@ -489,6 +495,7 @@
 </body>
 
 <script src="./scripts/faq-handler.js"></script>
+<script src="./scripts/swiper-handler.js"></script>
 <script src="./scripts/popup.js"></script>
 
 </html>

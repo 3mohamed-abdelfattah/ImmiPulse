@@ -92,11 +92,11 @@ nav {
 
 /* Testimonial Section */
 #testimonial {
-  @apply flex items-center gap-5 overflow-clip mt-8;
+  @apply flex items-center gap-5 mt-8 mx-2 sm:mx-10;
 }
 
 #testimonial>article {
-  @apply flex flex-col justify-center px-[30px] h-[177px] bg-white max-w-96 text-sm flex-shrink-0;
+  @apply flex flex-col justify-center px-3 sm:px-[30px] h-[177px] bg-white max-w-80 tiny:max-w-96 text-sm flex-shrink-0;
   box-shadow: 0px 12px 20px 0px rgba(27, 42, 52, 0.03);
 }
 
@@ -110,6 +110,24 @@ nav {
 
 #testimonial>article>div {
   @apply flex items-center justify-between mb-6;
+}
+
+#testimonial>article>div {
+  @apply flex items-center justify-between mb-6;
+}
+
+#testimonial>article button {
+  @apply bg-black;
+}
+
+.next,
+.prev {
+  @apply absolute bottom-14 bg-black w-8 h-8 sm:w-14 sm:h-14 text-white;
+}
+
+.next img,
+.prev img {
+  @apply m-auto w-5 sm:w-auto;
 }
 
 /* Reasons Section */
