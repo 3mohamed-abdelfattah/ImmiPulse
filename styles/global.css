@@ -254,15 +254,15 @@ nav {
 /* --------------------------------------- FOR QUIZ --------------------------------------- */
 
 #quiz {
-  @apply flex flex-col items-center
+  @apply flex flex-col items-center mx-4
 }
 
 #quiz>h1 {
-  @apply text-2xl sm:text-[32px] my-4 text-center max-w-[547px] mx-auto
+  @apply text-2xl sm:text-[32px] my-6 sm:my-9 text-center max-w-[547px]
 }
 
 #quiz>section {
-  @apply max-w-[980px] bg-white mx-4 my-9 px-4 md:px-10 py-4 sm:py-8
+  @apply max-w-[980px] bg-white mb-6 sm:mb-9 px-4 md:px-10 py-4 sm:py-8
 }
 
 #quiz>section h2 {
@@ -274,7 +274,7 @@ nav {
 }
 
 #quiz>section button {
-  @apply flex ml-auto bg-tertiaryColor px-8 py-2 rounded text-white font-semibold
+  @apply flex justify-center w-full sm:w-auto ml-auto bg-tertiaryColor px-8 py-2 rounded text-white font-semibold
 }
 
 #quiz article {
@@ -400,6 +400,10 @@ nav {
 /* Last section within the sidebar */
 #article aside>section:last-child {
   @apply flex my-6 justify-center xl:justify-start;
+}
+
+#article aside>section:nth-of-type(2) img {
+  @apply w-16 sm:w-auto;
 }
 
 /* Div styling within the sidebar */
